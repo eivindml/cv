@@ -2,6 +2,8 @@
 
 Personal CV. Created to be modular, so it's really simple and quick to add/remove sections, just by commenting one line.
 
+An example can be found [here in the build folder](build/evindml-cv.pdf).
+
 ## Usage
 
 Compile `eivindml-cv.tex` with your favorite tex/latex engine, or use the automated gulp build script, by running:
