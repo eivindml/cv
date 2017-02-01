@@ -1,17 +1,21 @@
 \documentclass[10pt,a4paper,sans]{moderncv}
 
 \moderncvstyle{fancy}
-\moderncvcolor{red}
-\setlength{\hintscolumnwidth}{3.25cm}
+\definecolor{color0}{rgb}{0,0,0} % Black
+\definecolor{color1}{RGB}{255,69,0} % Orange
+\definecolor{color2}{rgb}{0.4,0.4,0.4} % Dark gray
 
-\usepackage[sfdefault]{AlegreyaSans}
-\renewcommand{\familydefault}{\sfdefault}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75]{geometry}
 \usepackage{apple_emoji}
+\usepackage[sfdefault]{AlegreyaSans}
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\hintscolumnwidth}{3.25cm}
 
 \name{\AlegreyaSansThin{Eivind Mikael}}{\AlegreyaSansMedium{Lindbråten}}
 \title{iOS Developer}
+\extrainfo{14.09.1988}
 \address{Østgaardsgate 5}{0474 Oslo,}{Norway}
 \email{eivind.lindbraten\\@gmail.com}
 \phone[mobile]{+47~986~24~073}
@@ -23,29 +27,14 @@
 \begin{document}
 \makecvtitle{}
 
-\section{Education}
-\cventry{2015}{Social Entrepreneurship}{University of Oslo}{}{}{Description}
-\cventry{2012--2015}{Master Computer Science}{University of Oslo}{}{}{Description}
-\cventry{2009--2012}{Bachelor Computer Science}{University of Oslo}{}{}{Description}
-
-\section{Master thesis}
-\cvitem{Title}{\emph{Automatic hyphenation---a rule-based approach to hyphenation}}
-\cvitem{Description}{Short thesis abstract}
-
-\section{Relevant Work}
-\cventry{2015--2017}{Ways AS}{Co-founder \& Developer}{}{}{Description}
-
-\section{Volunteer Work}
-\cventry{2012--}{Byverkstedet}{Co-founder \& Developer}{}{}{Description}
-
-\section{Projects}
-\cventry{year-year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.}
-\cventry{year-year}{Job title}{Employer}{City}{}{Description}
-
-\section{Keywords}
-\cvitem{}{asdkasdk asd}
-
-\section{References}
-\cvlistitem{Matti}
+% Comment out sections not needed
+\input{sections/work}
+\input{sections/projects}
+\input{sections/master-thesis}
+\input{sections/education}
+\input{sections/volunteer-work}
+\input{sections/certificates}
+\input{sections/keywords}
+\input{sections/references}
 
 \end{document}

@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var latex = require('gulp-latex');
+const pdflatex = require('gulp-pdflatex');
 var del = require('del');
 
 
@@ -12,9 +12,13 @@ gulp.task('watch', ['latex'], function() {
 
 //Compile and deploy
 gulp.task('latex', function() {
-    return gulp.src('*.tex')
-        .pipe(latex())
-        .pipe(gulp.dest('./build'))
+    return gulp
+        .src('eivindml-cv.tex')
+        .pipe(pdflatex({
+            'shellEscape': false,
+            'texInputs': []
+        }))
+        .pipe(gulp.dest('./build/'))
 });
 // Clean
 gulp.task('clean', function() {
