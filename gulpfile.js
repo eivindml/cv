@@ -1,16 +1,13 @@
-var gulp = require('gulp');
-const pdflatex = require('gulp-pdflatex');
-var del = require('del');
+var gulp = require('gulp'),
+    pdflatex = require('gulp-pdflatex'),
+    del = require('del');
 
-
-gulp.task('default', ['latex']);
-
-//Watch source
+// Watch source files
 gulp.task('watch', ['latex'], function() {
     gulp.watch(['**/*.tex'], ['latex']);
 });
 
-//Compile and deploy
+// Compile LaTeX file with PDFLaTeX
 gulp.task('latex', function() {
     return gulp
         .src('eivindml-cv.tex')
@@ -20,7 +17,11 @@ gulp.task('latex', function() {
         }))
         .pipe(gulp.dest('./build/'))
 });
-// Clean
+
+// Clean build files
 gulp.task('clean', function() {
     return del(['*.aux', '*.log', '*.out', '*.pdf']);
 });
+
+// Set default task
+gulp.task('default', ['latex']);
