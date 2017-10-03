@@ -1,6 +1,6 @@
-# CV
+![Sample](assets/sample.png)
 
-![Sample](https://raw.githubusercontent.com/eivindml/cv/master/assets/sample.png)
+# CV
 
 Personal CV. Created to be modular, so it's really simple and quick to add/remove sections, just by commenting one line.
 
