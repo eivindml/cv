@@ -23,7 +23,7 @@ Personal CV. Created to be modular, so it's really simple and quick to add/remov
 
 ## Table of Contents
 
-- [misty](#misty)
+- [CV](#)
     - [Table of Contents](#table-of-contents)
     - [Usage](#usage)
     - [Dependencies](#installation)
