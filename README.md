@@ -1,4 +1,4 @@
-# ![Sample](assets/sample.png)
+# ![Sample](github/sample.png)
 
 <p align="center">
 
