@@ -5,12 +5,12 @@
   "main": "gulpfile.js",
   "dependencies": {
     "del": "^2.2.2",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-latex": "^1.0.1"
   },
   "devDependencies": {
     "del": "^2.2.2",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-latex": "^1.0.1",
     "gulp-pdflatex": "^0.2.0"
   },
