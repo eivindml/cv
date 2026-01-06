@@ -31,27 +31,35 @@ Personal CV. Created to be modular, so it's really simple and quick to add/remov
 
 ## Usage
 
-Make sure all dependencies are installed. Compile `eivindml-cv.tex` with your favorite TeX/LaTeX engine, or use the automated gulp build script, by running:
+Make sure all dependencies are installed. Build the CV using the Makefile:
 
-```
-npm install
-gulp
+```bash
+make          # Build the PDF
+make clean    # Remove temporary files
+make watch    # Watch for changes and rebuild (requires entr)
+make open     # Build and open the PDF (macOS)
 ```
 
-For continous compiling run `gulp watch`.
+You can also compile `src/eivindml-cv.tex` directly with your favorite TeX/LaTeX engine.
 
 ## Dependencies
 
-The automated gulp build script in `gulpfile.js` requires the `pdflatex` distribution to run. The TeX document depends on the [moderncv](https://www.ctan.org/pkg/moderncv?lang=en) (for styling) latex package to be available to the system. This can be installed by
+Building requires `pdflatex` to be installed on your system. The TeX document depends on the [moderncv](https://www.ctan.org/pkg/moderncv?lang=en) LaTeX package for styling. Install it with:
 
-```
+```bash
 sudo tlmgr install moderncv
 ```
 
-To use the font used in this document, install it by
+To use the Alegreya Sans font used in this document:
 
+```bash
+sudo tlmgr install alegreya fontaxes
 ```
-sudo tlmgr install alegreya
+
+For the `make watch` target, install `entr`:
+
+```bash
+brew install entr  # macOS
 ```
 
 ## License
